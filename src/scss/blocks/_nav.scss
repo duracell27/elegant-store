@@ -1,0 +1,46 @@
+.nav {
+  background-color: #ffc95c;
+  padding: 16px 0;
+}
+
+.nav__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    
+
+}
+
+.nav__item {
+}
+.nav__link {
+    color: #141718;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+
+}
+.nav_buttons {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+}
+.nav__btn-count{
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    background-color: #141718;
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffc95c;
+}
