@@ -1,28 +1,33 @@
-<article class="card">
-  <div class="card__picture">
-    <img
-      src="./img/arrivals/01.jpg"
-      srcset="./img/arrivals/01@2x.jpg 2x"
-      alt="itempic"
-    />
-    <div class="card__new">new</div>
-    <div class="card__like"><img src="./img/icons/like.svg" alt="like" /></div>
-    <div class="card__btn">
-      <button class="btn btn--small btn--wide">Add to cart</button>
+<div class="swiper-slide">
+  <article class="card">
+    <div class="card__picture">
+      <img
+        src="./img/arrivals/@@img.jpg"
+        srcset="./img/arrivals/@@img@2x.jpg 2x"
+        alt="itempic"
+      />
+      <div class="card__new">@@status</div>
+      <div class="card__like">
+        <img src="./img/icons/like.svg" alt="like" />
+      </div>
+      <div class="card__btn">
+        <button class="btn btn--small btn--wide">Add to cart</button>
+      </div>
     </div>
-  </div>
-  <div class="card__desc">
-    <div class="card__rating">
-      <img src="./img/icons/StarFill.svg" alt="star" />
-      <img src="./img/icons/StarFill.svg" alt="star" />
-      <img src="./img/icons/StarFill.svg" alt="star" />
-      <img src="./img/icons/StarFill.svg" alt="star" />
-      <img src="./img/icons/StarFill.svg" alt="star" />
+    <div class="card__desc">
+      <div class="card__rating">
+        @@for(var i = 0; i < context.rating; i++){
+
+        <img src="./img/icons/StarFill.svg" alt="star" />
+        }
+        <!-- <img src="./img/icons/StarFill.svg" alt="star" />
+          <img src="./img/icons/StarFill.svg" alt="star" />
+          <img src="./img/icons/StarFill.svg" alt="star" />
+          <img src="./img/icons/StarFill.svg" alt="star" /> -->
+      </div>
+      <div class="card__title">@@title</div>
+      <div class="card__price">@@price</div>
     </div>
-    <div class="card__title">
-      Skullcandy - Crusher anc 2 wireless headphones
-    </div>
-    <div class="card__price">$299.99</div>
-  </div>
-  <a href="#" class="card__link"></a>
-</article>
+    <a href="#" class="card__link"></a>
+  </article>
+</div>

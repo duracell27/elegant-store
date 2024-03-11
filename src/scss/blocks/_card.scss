@@ -9,6 +9,10 @@
         transform: translateY(0%);
         pointer-events: all;
     }
+    .card__like{
+        opacity: 1;
+        transform: translateY(0%);
+    }
   }
 }
 .card__link{
@@ -36,6 +40,9 @@
 }
 .card__like {
   position: absolute;
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: all .3s ease-in-out;
   z-index: 9;
   top: 16px;
   right: 16px;
