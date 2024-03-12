@@ -3,6 +3,7 @@ import Swiper from "swiper/bundle";
 
 // import mobileNav from './modules/mobile-nav.js';
 import tagline from "./modules/tagline.js";
+import timer from "./modules/timer.js";
 
 const swiper = new Swiper(".swiper", {
   slidesPerView: "auto",
@@ -17,3 +18,4 @@ const swiper = new Swiper(".swiper", {
 swiper();
 // mobileNav();
 tagline();
+timer();
