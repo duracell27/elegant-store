@@ -7,12 +7,18 @@ import timer from "./modules/timer.js";
 
 const swiper = new Swiper(".swiper", {
   slidesPerView: "auto",
-  spaceBetween: 24,
+  spaceBetween: 16,
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
+  breakpoints: {
+    820:{
+      slidesPerView: "auto",
+  spaceBetween: 24,
+    }
+  }
 });
 
 swiper();

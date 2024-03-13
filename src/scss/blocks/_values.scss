@@ -1,5 +1,6 @@
 .values {
   padding: 40px 0;
+
 }
 
 // .values__grid {
@@ -11,15 +12,28 @@
 .values__grid{
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 54px;
     &> *{
         flex:1;
         min-width: 262px;
+    }
+    @include mobile{
+      gap: 24px 9px;
+      grid-template-columns: repeat(2, minmax(150px, 1fr));
+      display: grid;
+      &> *{
+        flex:none;
+        min-width: auto;
+    }
     }
 }
 .value {
   background-color: #f3f5f7;
   padding: 48px 32px;
+  @include mobile{
+    padding: 32px 16px;
+    padding-right: 8px;
+  }
 }
 .value__img {
   margin-bottom: 16px;
@@ -30,6 +44,10 @@
   line-height: 1.4;
   font-weight: 500;
   font-family: var(--font-accent);
+  @include mobile{
+    margin-bottom: 4px;
+    font-size: 14px;
+  }
 }
 .value__desc {
   color: #6c7275;

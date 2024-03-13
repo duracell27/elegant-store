@@ -3,7 +3,7 @@
   display: grid;
   gap: 24px;
   position: relative;
-  &::before {
+  &::after {
     content: "";
     width: 50%;
     height: 100%;
@@ -18,6 +18,11 @@
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       background-image: url("./../img/promotion@2x.jpg");
     }
+    @include mobile {
+      position: static;
+      height: 367px;
+      width: 100%;
+    }
   }
 }
 .promotion__container {
@@ -25,6 +30,14 @@
     (100% - var(--container-width)) / 2 + (var(--container-width) / 2)
   );
   padding-right: calc((100% - var(--container-width)) / 2);
+
+  @include tablet {
+    padding-right: var(--container-padding);
+  }
+  @include mobile{
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+  }
 }
 
 .promotion__content {
@@ -32,6 +45,13 @@
   padding-left: 72px;
   display: grid;
   gap: 24px;
+  @include tablet{
+    padding: 50px 0;
+    padding-left: var(--container-padding);
+  }
+  @include mobile{
+    padding: 28px 0;
+  }
 }
 .promotion__tagline {
   color: #377dff;
@@ -47,6 +67,9 @@
   letter-spacing: -0.4px;
   line-height: 1.1;
   font-family: var(--font-accent);
+  @include mobile{
+    font-size: 34px;
+  }
 }
 .promotion__desc {
   display: grid;
@@ -56,6 +79,9 @@
   color: #121212;
   font-size: 20px;
   line-height: 1.6;
+  @include mobile{
+    font-size: 14px;
+  }
 }
 .promotion__expires {
   font-size: 16px;

@@ -15,10 +15,10 @@ function updatetimer() {
     const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60))
     const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000)
 
-    daysElement.innerHTML = days
-    hoursElement.innerHTML = hours
-    minutesElement.innerHTML = minutes
-    secondsElement.innerHTML = seconds
+    daysElement.innerHTML = days <10 ? '0' + days : days
+    hoursElement.innerHTML = hours <10 ? '0' + hours : hours
+    minutesElement.innerHTML = minutes <10 ? '0' + minutes : minutes
+    secondsElement.innerHTML = seconds <10 ? '0' +seconds : seconds
 }
 updatetimer()
 setInterval(updatetimer, 1000)
